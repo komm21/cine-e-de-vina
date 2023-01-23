@@ -22,6 +22,6 @@ function checkName(){
 
 function adaugaText(){
     checkName();
-    let text = "Gabi";
+    let text = "Chong";
     document.getElementById("persVinovata").innerHTML=text;
 }
