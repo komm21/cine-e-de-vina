@@ -1,10 +1,15 @@
 let numeleTau = document.getElementById("numeleTau").value;
 let numelePer2 = document.getElementById("numelePer2").value;
 let btnSubmit = document.getElementById("btnSubmit");
+let stabPersVin = document.getElementById("stabPersVin");
+
+btnSubmit.addEventListener("click", checkName);
+stabPersVin.addEventListener("click", adaugaText);
 
 let numeCorecte = ["Cosmin", "Gabi", "Gabriela", "Calin", "cosmin", "calin", "gabi", "gabriela", "Chong", "George"]
 
-btnSubmit.addEventListener("click", adaugaText);
+
+
 
 function checkName(){
     if (numeCorecte.includes(numeleTau)){
@@ -20,8 +25,10 @@ function checkName(){
     }
 }
 
+let x = Math.floor(Math.random()*numeCorecte.length);
+
+
 function adaugaText(){
-    checkName();
-    let text = "Chong";
+    let text = "In urma unor analize complicate, persoana vinovata este..."+ numeCorecte[x];
     document.getElementById("persVinovata").innerHTML=text;
 }

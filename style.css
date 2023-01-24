@@ -4,8 +4,7 @@ body{
 }
 .foaie{
     width: 80vh;
-    height: 70vh;
-    
+    height: 70vh;    
     margin:50px auto;
     text-align: center;
 }
@@ -16,6 +15,9 @@ input {
     margin-top:10px;
 }
 #persVinovata{
-    font-size: 10rem;
+    font-size: 2rem;
     color:red;
+}
+h1{
+    font-size: 2rem;
 }
